@@ -15,6 +15,7 @@ class ItemsSelectionVC: UIViewController, UICollectionViewDelegate, UICollection
     var selectedCategory: String!
     var items: [ItemInfo]!
     let data = DataSet()
+    var itemToPass: ItemInfo!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,23 @@ class ItemsSelectionVC: UIViewController, UICollectionViewDelegate, UICollection
             return cell
         }
         return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = view.bounds.width
+        let cellDimension = (width / 2) - 15
+        return CGSize(width: cellDimension, height: cellDimension + 50)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        itemToPass = items[indexPath.item]
+        performSegue(withIdentifier: "toItemDetails", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailsVC = segue.destination as? ItemDetailsVC {
+            detailsVC.selectedItem = itemToPass
+        }
     }
 
 }

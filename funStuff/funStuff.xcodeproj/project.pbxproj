@@ -18,6 +18,7 @@
 		A3C5522B2216D70D005DCE00 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5522A2216D70D005DCE00 /* CategoryCell.swift */; };
 		A3C5522D2216DE99005DCE00 /* ItemsSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5522C2216DE99005DCE00 /* ItemsSelectionVC.swift */; };
 		A3C5522F2216E407005DCE00 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5522E2216E407005DCE00 /* ItemCell.swift */; };
+		A3D0AC9D221AC8A8009A570F /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D0AC9C221AC8A8009A570F /* ItemDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		A3C5522A2216D70D005DCE00 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		A3C5522C2216DE99005DCE00 /* ItemsSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsSelectionVC.swift; sourceTree = "<group>"; };
 		A3C5522E2216E407005DCE00 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		A3D0AC9C221AC8A8009A570F /* ItemDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				A32EFB30221588740037FA79 /* HomeVC.swift */,
 				A3C5522C2216DE99005DCE00 /* ItemsSelectionVC.swift */,
+				A3D0AC9C221AC8A8009A570F /* ItemDetailsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				A32EFB4E22158AEC0037FA79 /* TypeCategory.swift in Sources */,
 				A32EFB2F221588740037FA79 /* AppDelegate.swift in Sources */,
 				A32EFB4A22158A580037FA79 /* ItemInfo.swift in Sources */,
+				A3D0AC9D221AC8A8009A570F /* ItemDetailsVC.swift in Sources */,
 				A3C5522B2216D70D005DCE00 /* CategoryCell.swift in Sources */,
 				A3C5522D2216DE99005DCE00 /* ItemsSelectionVC.swift in Sources */,
 			);
